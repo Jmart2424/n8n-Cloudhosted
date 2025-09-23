@@ -306,7 +306,7 @@ export class GmailV2 implements INodeType {
 
 						let appendAttribution = options.appendAttribution;
 						if (appendAttribution === undefined) {
-							appendAttribution = nodeVersion >= 2.1;
+							appendAttribution = false;
 						}
 
 						const email: IEmail = {
